@@ -20,25 +20,25 @@ class MyModel(nn.Module):
             nn.MaxPool2d(2, 2), # -> 16x112x112
             
             nn.Conv2d(16, 32, 3, padding=1),  # 32x112x112
-            nn.Dropout(p = dropout),
+            #nn.Dropout(p = dropout),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             nn.MaxPool2d(2, 2),  # -> 32x56x56
             
             nn.Conv2d(32, 64, 3, padding=1),  # -> 64x56x56
-            nn.Dropout(0.2),
+            #nn.Dropout(0.2),
             nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.MaxPool2d(2, 2),  # -> 64x28x28
             
             nn.Conv2d(64, 128, 3, padding=1),  # -> 128x28x28
-            nn.Dropout(p = 0.2),
+            #nn.Dropout(p = 0.2),
             nn.BatchNorm2d(128),
             nn.ReLU(),
             nn.MaxPool2d(2, 2),  # -> 128x14x14
             
             nn.Conv2d(128, 256, 3, padding=1),  # -> 256x14x14
-            nn.Dropout(0.2),
+            #nn.Dropout(0.2),
             nn.BatchNorm2d(256),
             nn.ReLU(),
             nn.MaxPool2d(2, 2),  # -> 256x7x7
@@ -50,7 +50,7 @@ class MyModel(nn.Module):
             nn.ReLU(),
             
             nn.Linear(4096, 1024),  # -> 500
-            nn.Dropout(p = dropout),
+            #nn.Dropout(p = dropout),
             nn.BatchNorm1d(1024),
             nn.ReLU(),          
             
