@@ -35,10 +35,10 @@ def get_model_transfer_learning(model_name="resnet18", n_classes=50):
         nn.Linear(num_ftrs, num_ftrs * 5),
         nn.BatchNorm1d(num_ftrs * 5),
         nn.ReLU(),
-        nn.Linear(num_ftrs * 5, num_ftrs*2),
-        nn.BatchNorm1d(num_ftrs * 2),
+        nn.Linear(num_ftrs * 5, num_ftrs*3),
+        nn.BatchNorm1d(num_ftrs * 3),
         nn.ReLU(),
-        nn.Linear(num_ftrs * 2, n_classes) 
+        nn.Linear(num_ftrs * 3, n_classes) 
     ) 
     # YOUR CODE HERE
 
