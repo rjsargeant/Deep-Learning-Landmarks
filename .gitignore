@@ -3,3 +3,4 @@ archive.tar
 *.pt
 /landmark_images/
 /.ipynb_checkpoints/
+/stc/.ipynb_checkpoints/
