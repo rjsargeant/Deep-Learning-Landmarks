@@ -2,3 +2,4 @@ archive.tar
 /checkpoints/*.pt
 *.pt
 /landmark/
+/.ipynb_checkpoints/
