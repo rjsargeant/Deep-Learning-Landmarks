@@ -50,7 +50,7 @@ class MyModel(nn.Module):
             nn.ReLU(),
             
             nn.Linear(4096, 1024),  # -> 500
-            #nn.Dropout(p = dropout),
+            nn.Dropout(p = dropout),
             nn.BatchNorm1d(1024),
             nn.ReLU(),          
             
